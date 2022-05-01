@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Pixels to Rems",
+  "short_name": "px to rem",
+  "version": "1.0.0",
+  "description": "Pixel to rem calculator",
+  "icons": {
+    "16": "16.png",
+    "32": "32.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
+  "action": {
+    "default_title": "Pixels to Rems",
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "16.png",
+      "32": "32.png",
+      "48": "48.png",
+      "128": "128.png"
+    }
+  },
+  "permissions": [
+    "storage"
+  ]
+}
