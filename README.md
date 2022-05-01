@@ -2,7 +2,8 @@
 
 <img width="386" alt="Screenshot 2022-05-01 at 19 32 54" src="https://user-images.githubusercontent.com/52447817/166159857-cf7f0ec0-f480-4ac4-bd7e-db9f4e704cc4.png">
 
-Calculate rems from given pixels (that you can store as base value) and copy the value with or without semicolon.
+Calculate rems from given pixels and copy the value with or without semicolon.
+You can store a base for the conversion, that is initially set to 16px.
 
 ### Install in Chrome browser
 * Click on extensions > manage extensions
