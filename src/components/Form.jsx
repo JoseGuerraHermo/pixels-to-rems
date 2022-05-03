@@ -7,7 +7,7 @@ const Form = ({submit, initialValue}) => {
 
   const handlePixels = (event) => {
     const value = event.target.value;
-    if (value.length > 4 || value > 4000) return false;
+    if (value.length > 7 || value > 4000) return false;
     setPixels(value);
   }
   const makeCalculations = (event) => {
@@ -50,8 +50,6 @@ const Form = ({submit, initialValue}) => {
                     placeholder-orange-400
                     "
           onChange={handlePixels}
-          // disable wheel
-          onWheel={() => false}
         />
         <input 
           type="submit" 
