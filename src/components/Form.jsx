@@ -30,6 +30,7 @@ const Form = ({submit, initialValue}) => {
         <input 
           type="number" 
           min="0"
+          step=".01"
           max="4000"
           placeholder="px"
           value={pixels}
@@ -49,6 +50,8 @@ const Form = ({submit, initialValue}) => {
                     placeholder-orange-400
                     "
           onChange={handlePixels}
+          // disable wheel
+          onWheel={() => false}
         />
         <input 
           type="submit" 

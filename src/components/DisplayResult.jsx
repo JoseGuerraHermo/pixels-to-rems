@@ -5,7 +5,8 @@ const DisplayResult = ({rems}) => {
   const number =rems;
   const semicolon = `${rems}rem;`;
 
-  const copyResult = (format) => {
+  const copyResult = (e, format) => {
+    e.preventDefault();
     if (!format) return;
     if (format) navigator.clipboard.writeText(format);
   }
@@ -19,7 +20,7 @@ const DisplayResult = ({rems}) => {
             <input 
               type="button" 
               value="Copy" 
-              onClick={copyResult(number)}
+              onClick={e => copyResult(e, number)}
               className="
                         ml-2 
                         mb-2.5 
@@ -42,7 +43,7 @@ const DisplayResult = ({rems}) => {
             <input 
               type="button"
                value="Copy" 
-              onClick={copyResult(semicolon)}
+              onClick={e => copyResult(e, semicolon)}
               className="
                         ml-2 
                         bg-transparent
